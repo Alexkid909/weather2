@@ -1,0 +1,15 @@
+<div>
+  <ngForm>
+    <div>
+      <input type="text" class="form-control" name="search" [value]="searchTerm" >
+    </div>
+    <div>
+      <span>{{searchTerm}}</span>
+    </div>
+    <div>
+      <select>
+        <option *ngFor="let location of locations" [value]="location">{{location.name}}</option>
+      </select>
+    </div>
+  </ngForm>
+</div>
